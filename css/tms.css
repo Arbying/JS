@@ -1,0 +1,13 @@
+#slider .slider {width:940px;margin:0 auto; height:392px;background: url('../images/slider_bg.png') no-repeat;}
+#slider .items {display:none}
+
+#slider .pagination {position:absolute;top:353px;left:660px; z-index:999;}
+#slider .pagination li {float:left;margin:0 10px 0 0;display:block;background: url('../images/pags.png') right 0 no-repeat;}
+#slider .pagination li.current, #slider .pagination li:hover {background-position:0 0;}
+#slider .pagination li a {width:13px;height:13px;display:block}
+
+#slider .banner{width:265px;position:absolute;display:none; left:660px;top:17px;}
+#slider .banner .title1{font-size: 15px; line-height: 19px; color: #8cc503;margin-bottom:12px;}
+#slider .banner .title2{font-size: 18px; line-height: 28px; color: #fff;margin-bottom:9px;}
+.banner .title1, .banner .title2{text-transform:uppercase;font-family: 'Oswald', sans-serif;}
+.banner .but_wrap{position:relative;margin-top:17px;}

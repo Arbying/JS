@@ -1,0 +1,36 @@
+/*================================>> Menu 1 <<========================================*/
+.nav{ position:relative; margin: 0px 0 0 0; padding: 12px 0 14px 21px;float:left;}
+.nav .sf-menu ul {position:absolute;top:-999px; display:none;/* left offset of submenus need to match (see below) */}
+.nav .sf-menu ul li {width:100%}
+.nav .sf-menu li {float:left;position:relative}
+
+.nav .sf-menu>li>a{ font-size: 12px; line-height: 19px; color:#6a6a73;}
+.nav .sf-menu>li>a:hover,.nav .sf-menu>li.current>a,.nav .sf-menu>li.sfHover>a{color:#fff;}
+
+.nav .sf-menu>li{margin-right:20px;}
+.nav .sf-menu a{}
+
+/*================================>> Menu 2 <<========================================*/
+nav{ position:relative; margin: 0px 0 0 0;border-top:1px solid #c7e603;background: url('../images/nav2.png') repeat-x #80b404;border-radius: 0 0 5px 5px;box-shadow: 0px 5px 5px #1f1e20 ;}
+nav .sf-menu ul {position:absolute;top:-999px; display:none;/* left offset of submenus need to match (see below) */}
+nav .sf-menu ul li {width:100%}
+nav .sf-menu li {float:left;position:relative}
+
+nav .sf-menu>li>a{display:block;position:relative; font-size: 17px; line-height: 21px; color:#fff;text-transform:none;padding: 16px 19px 20px 20px;}
+nav .sf-menu>li>a:hover,nav .sf-menu>li.current>a,nav .sf-menu>li.sfHover>a{color:#2d2d2f;}
+nav .sf-menu>li.f_item{border-radius: 0 0 0 5px;}
+nav .sf-menu>li.l_item{border-radius: 0 0 5px 0;}
+
+nav .sf-menu>li{background: url('../images/nav2_a.png') 0 -100px repeat-x;position:relative;}
+nav .sf-menu>li:hover,.sf-menu>li.current,.sf-menu>li.sfHover{background-position:0 0;}
+nav .sf-menu>li:after{background: url('../images/nav2_li.png') 0 0 no-repeat;width:2px;height:58px;display:block;position:absolute;top:-1px;right:-2px;content:"";}
+nav .sf-menu a{}
+
+/*================================>> 2 Level <<========================================*/
+nav .sf-menu li ul,nav .sf-menu li.sfHover ul{left:0;top:58px;width: 161px;background:#232324;padding:0 0 0 0; z-index:99; border-radius: 0 0 5px 5px;}
+nav .sf-menu li ul li{border-bottom:1px solid #323132;background: url('../images/nav2_sub_li.png') 136px 14px no-repeat;}
+nav .sf-menu li ul li a{color:#fff;display:block;padding: 7px 0 8px 20px;}
+nav .sf-menu li li a:hover, nav .sf-menu li.sfHover li.sfHover>a{color:#8cc503;}
+
+/*================================>> 3 Level <<========================================*/
+nav .sf-menu li li ul{left:162px !important;top:0px !important;}
