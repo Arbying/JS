@@ -1,296 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <title>PC</title>
-    <meta charset="utf-8">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/prettyPhoto.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/tms.css">
-    <script type="text/javascript" src="js/jquery-1.7.min.js"></script>
-    <script type="text/javascript" src="js/superfish.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="js/tms-0.4.1.js"></script>
-    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-    <script type="text/javascript" src="js/hover-image.js"></script>
-    <script>
-    	$(function(){
-         $('.slider')._TMS({
-            prevBu:false,
-            nextBu:false,
-            playBu:false,
-            duration:800,
-            easing:'easeOutQuad',
-            preset:'diagonalFade',
-            pagination:true,//'.pagination',true,'<ul></ul>'
-            pagNums:false,
-            slideshow:7000,
-            numStatus:false,
-            banners:'fade',// fromLeft, fromRight, fromTop, fromBottom
-            waitBannerAnimation:false,
-            progressBar:false
-         })
-      })
-    </script>
-	<!--[if lt IE 8]>
-   <div style=' clear: both; text-align:center; position: relative;'>
-     <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-       <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-    </a>
-  </div>
-<![endif]-->
-    <!--[if lt IE 9]>
-   	<script type="text/javascript" src="js/html5.js"></script>
-    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
-    <![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serveur MiniJeux</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body>
-<div class="main">
-<!--==============================header=================================-->
-   	<header>
-       <div class="top">
-         <div class="nav">
-           <ul class="sf-menu">
-              <li><a href="#">home</a></li>
-              <li><a href="#">reviews</a></li>
-              <li><a href="#">news</a></li>
-              <li><a href="#">videos</a></li>
-              <li><a href="#">blog</a></li>
-              <li><a href="#">contacts</a></li>
-           </ul>
-         </div>
-         <div class="login">
-             You have not yet registered to our club? &nbsp;&nbsp; &nbsp; <a href="#">Register</a> &nbsp;&nbsp; or &nbsp;&nbsp; <a href="#">Log in</a>
-         </div>
-         <div class="clear"></div>
-       </div>
-       <div class="middle">
-         <h1><a class="logo" href="index.html">Games</a></h1>
-         <a href="#" class="h_banner"></a>
-       </div>
-	    <nav>
-        	<ul class="sf-menu">
-            <li class="current f_item"><a href="index.html">PC</a></li>
-            <li><a href="index-1.html">XBOX 360</a></li>
-            <li><a href="#">Wii</a></li>
-            <li><a href="#">PS2</a>
-               <ul>
-                  <li><a href="#">Lorem ipsum </a></li>
-                  <li><a href="#">Dolor sit amet</a></li>
-                  <li><a href="#">Conse ctetur </a></li>
-                  <li><a href="#">Dipisicing </a></li>
-                  <li class="bd_none"><a href="#">Eeliteiusmod</a></li>
-              </ul>
-            </li>
-            <li><a href="#">PS3</a></li>
-            <li><a href="#">PSP</a></li>
-            <li><a href="#">Mobile</a></li>
-         </ul>
-         <form id="search" action="search.php" method="GET" accept-charset="utf-8">
-            <input type="text" name="s" />
-            <a onclick="document.getElementById('search').submit()" class="button1">Search</a>
-         </form>
-         <div class="clear"></div>
-        </nav>
-    </header>
-      <!-- slider -->
-      <div id="slider">
-        <div class="slider">
-          <ul class="items">
-            <li>
-               <img src="images/slide1.png" width="640" height="385" alt="slide1" />
-               <div class="banner">
-                  <div class="title1">xbox 360</div>
-                  <div class="title2">Lorem ipsum dolor sit amet conse ctetur </div>
-                  Lorem ipsum dolor sit amet conse ctetur adipi- sicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen- derit in voluptate velit esse.
-                  <div class="but_wrap">
-                     <a href="#" class="button2">read more</a>
-                  </div>
-               </div>
-            </li>
-            <li>
-               <img src="images/slide2.png" width="640" height="385" alt="slide2" />
-               <div class="banner">
-                  <div class="title1">ps 2</div>
-                  <div class="title2">Sit amet conse ctetur </div>
-                  Lorem ipsum dolor sit amet conse ctetur adipi- sicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen- derit in voluptate velit esse.
-                  <div class="but_wrap">
-                     <a href="#" class="button2">read more</a>
-                  </div>
-               </div>
-            </li>
-            <li>
-               <img src="images/slide3.png" width="640" height="385" alt="slide3" />
-               <div class="banner">
-                  <div class="title1">ps 3</div>
-                  <div class="title2">Ipsum dolor sit amet conse ctetur </div>
-                  Lorem ipsum dolor sit amet conse ctetur adipi- sicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen- derit in voluptate velit esse.
-                  <div class="but_wrap">
-                     <a href="#" class="button2">read more</a>
-                  </div>
-               </div>
-            </li>
-            <li>
-               <img src="images/slide4.png" width="640" height="385" alt="slide4" />
-               <div class="banner">
-                  <div class="title1">PSP</div>
-                  <div class="title2">Sit amet lorem ipsum dolor sit amet conse ctetur </div>
-                  Lorem ipsum dolor sit amet conse ctetur adipi- sicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen- derit in voluptate velit esse.
-                  <div class="but_wrap">
-                     <a href="#" class="button2">read more</a>
-                  </div>
-               </div>
-            </li>
-          </ul>
+<body id ="main-body">
+  <header>
+      <div class = "divTitre">
+        <h1 class = "titre" id="welcomeTitle">Bienvenue sur Mini-Jeux</h1>
+      </div>
+  </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-9"></div>
+            <div class="col-3">
+                <form id="loginForm" class="form-inline">
+                  <div id="inscriptionMessage" class="alert alert-success" style="display: none;">Inscription réussie</div>
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="loginInput" placeholder="Login">
+                    <input type="password" class="form-control mb-2 mr-sm-2" id="passwordInput" placeholder="Mot de passe">
+                    <button type="submit" id = "log" class="btn btn-primary mb-2">Login</button>
+                    <button type="button" class="btn btn-secondary mb-2" id="inscriptionBtn">Inscription</button>
+                </form>
+                <div id="loginError" class="alert alert-danger" style="display: none;">Vérifier login et mot de passe</div>
+                <button type="button" class="btn btn-primary mb-2" id="deconnexionBtn" style="display: none;">Déconnexion</button>
+            </div>
         </div>
-      </div>
-      <!-- slider-end -->
-<!--==============================content================================-->
-    <section id="content">
-    	<div class="container_12">
-        	<div class="wrapper">
-            <article class="grid_8">
-               <div class="box">
-                  <h2 class="first">latest topics</h2>
-                  <div class="sub_box">
-                     <ul class="ext_list topics">
-                        <li>
-                           <figure><img src="images/topic1.jpg" alt="" /></figure>
-                           <div>
-                              <h3 class="ind1">PS2</h3>
-                              <h4>Excepteur sint occaecat</h4>
-                              Lorem ipsum dolor sit amet conse ctetur adipi- sicing elit, sed do eiusmod tempor incididunt <br>ut labore et dolore magna aliqua.<br>
-                              <a href="#" class="button3">Read More</a>
-                           </div>
-                        </li>
-                        <li>
-                           <figure><img src="images/topic2.jpg" alt="" /></figure>
-                           <div>
-                              <h3 class="ind1">XBOX 360</h3>
-                              <h4>cupidatat non proident</h4>
-                              Lorem ipsum dolor sit amet conse ctetur adipi- sicing elit, sed do eiusmod tempor incididunt <br>ut labore et dolore magna aliqua.<br>
-                              <a href="#" class="button3">Read More</a>
-                           </div>
-                        </li>
-                        <li class="m_bottom_zero">
-                           <figure><img src="images/topic3.jpg" alt="" /></figure>
-                           <div>
-                              <h3 class="ind1">Mobile</h3>
-                              <h4>Lorem ipsum dolor sit amet conse </h4>
-                              Lorem ipsum dolor sit amet conse ctetur adipi- sicing elit, sed do eiusmod tempor incididunt <br>ut labore et dolore magna aliqua.<br>
-                              <a href="#" class="button3">Read More</a>
-                           </div>
-                        </li>
-                     </ul>
-                     <a href="#" class="link1">see all</a>
-                  </div>
-               </div>
-            </article>
-            <article class="grid_4">
-               <div class="box m_bot1">
-                  <h2 class="first">Latest reviews</h2>
-                  <div class="sub_box1">
-                     <ul class="ext_list latest_r">
-                        <li>
-                           <div class="ext_box review">
-                              <figure><img src="images/latest1.jpg" alt="" /></figure>
-                              <div>
-                                 <h3 class="ind2">XBOX 360</h3>
-                                 <h4>Lorem ipsum dolor sit amet conse</h4>
-                              </div>
-                           </div> 
-                           <div class="text"><a href="#">Lorem ipsum dolor sit amet conse ctetur adipi- sicing elit, sed do eiusmod tempor incididunt <br>ut labore et dolore magna aliqua.</a></div>
-                        </li>
-                        <li class="m_bottom_zero">
-                           <div class="ext_box review">
-                              <figure><img src="images/latest2.jpg" alt="" /></figure>
-                              <div>
-                                 <h3 class="ind2">PS 3</h3>
-                                 <h4>dolor sit amet conse </h4>
-                              </div>
-                           </div> 
-                           <div class="text"><a href="#">Lorem ipsum dolor sit amet conse ctetur adipi- sicing elit, sed do eiusmod tempor incididunt <br>ut labore et dolore magna aliqua.</a></div>
-                        </li>
-                     </ul>
-                     <a href="#" class="link1">see all</a>
-                  </div>
-               </div>
-               <div class="box">
-                  <h2 class="first">Latest video</h2>
-                  <div class="sub_box">
-                     <ul class="ext_list latest_r video">
-                        <li class="m_bottom_zero">
-                           <div class="ext_box review">
-                              <figure><a class="lightbox-video" href="flash/video_AS3.swf?width=512&amp;height=288&amp;fileVideo=intro06.flv" data-gal="prettyPhoto"><img src="images/latest3.jpg" alt="" /></a></figure>
-                              <div>
-                                 <h3 class="ind2">XBOX 360</h3>
-                                 <h4 class="ind">ipsum dolor sit amet conse </h4>
-                              </div>
-                           </div> 
-                           <div class="text"><a href="#">Lorem ipsum dolor sit amet conse ctetur.</a></div>
-                        </li>
-                     </ul>
-                     <a href="#" class="link1">see all</a>
-                  </div>
-               </div>
-            </article>
+    <div id="inscriptionMessage" class="alert alert-success" style="display: none;">Inscription réussie</div>
+    <br/>
+    <br/>
+    <div class="inscription-form" style="display: none;">
+      <form id="inscriptionForm">
+          <div class="form-group">
+            <input type="text" class="form-control" id="login" placeholder="Login">
+            <small class="form-text text-danger" id="loginError" style="display:none;">Login déjà existant ou login incorrect</small>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" id="password" placeholder="Mot de passe">
+            <small class="form-text text-danger" id="passwordError" style="display:none;">Le mot de passe doit contenir entre 8 et 25 caractères, au moins une majuscule, une minuscule, un chiffre et un caractère spécial.</small>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" id="passwordCheck" placeholder="Vérification mot de passe">
+            <small class="form-text text-danger" id="passwordCheckError" style="display:none;">Les mots de passe ne correspondent pas.</small>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" placeholder="Adresse e-mail">
+            <small class="form-text text-danger" id="emailError" style="display:none;">Veuillez entrer une adresse e-mail valide.</small>
+          </div>
+          <button type="submit" class="btn btn-primary">S'inscrire</button>
+      </form>
+      <br/>
+      <br/>
+      <div id="errorMessage" class="alert alert-danger" style="display: none;">Inscription pas faite</div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Tableau de high scores</th>
+        </tr>
+        <tr>
+          <th>Casse Briques</th>
+          <th>Prince Of Persia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="cassebriques-score"></td>
+          <td id="prince-score"></td>
+        </tr>
+      </tbody>
+    </table>
+     <div class="row">
+         <div class="col">
+             <h2 id = "img1" style="display: none;">Casse Briques</h2>
+             <p id = "img11" style="display: none;">
+                Le jeu "Casse Briques" est un jeu d'arcade classique dans lequel le joueur doit casser des briques en utilisant une balle et une raquette. Le joueur doit faire rebondir la balle sur la raquette pour frapper les briques et les détruire, tout en évitant de perdre la balle en la laissant tomber en bas de l'écran.
+             </p>
+             <a href="ProjetJSReinders/index.html">
+              <img src="IMG/CasseBriques.jpg" alt="Casse Briques" class="game-image" style="display: none;">
+             </a>
          </div>
-      </div>
-    </section>
-    <aside>
-      <div class="container_12">
-         <div class="wrapper">
-            <article class="grid_4">
-               <h5>about us</h5>
-               <p class="green p2">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-               Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
-               <a href="#" class="link2">read more</a>
-            </article>
-            <article class="grid_4">
-               <h5>featured</h5>
-               <p class="green p3">Dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-               <p class="p3">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-               Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.<br>
-               <a href="#" class="link2 b_ind">read more</a>
-            </article>
-            <article class="grid_4">
-               <h5>top games:</h5>
-               <ul class="games_list">
-                  <li>
-                     <span class="green">XBOX 360</span><br>
-                     <a href="#">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor</a>
-                  </li>
-                  <li>
-                     <span class="green">Mobile</span><br>
-                     <a href="#">Dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor</a>
-                  </li>
-                  <li class="last bd_none">
-                     <span class="green">XBOX 360</span><br>
-                     <a href="#">Sit amet conse ctetur adipisicing elit</a>
-                  </li>
-               </ul>
-               <a href="#" class="link2">read more</a>
-            </article>
-         </div>
-      </div>
-    </aside>
-<!--==============================footer=================================-->
-    <footer>
-      <div class="menu">
-         <a href="#">home</a>
-         <a href="#">reviews</a>
-         <a href="#">news</a>
-         <a href="#">videos</a>
-         <a href="#">blog</a>
-         <a href="#">contacts</a>
-      </div>
-      <div class="privacy">
-         <a href="index.html"><img src="images/f_logo.png" width="74" height="23" alt="f_logo" /></a>
-          &nbsp; &nbsp;<span>© 2012 &nbsp; &nbsp;&nbsp; <a href="index-2.html">Privacy Policy</a></span><br>
-          <!-- {%FOOTER_LINK} -->
-      </div>
-    </footer>
-</div>
+         <div class="col">
+            <h2 id = "img2" style="display: none;">Prince of persia</h2>
+            <p id = "img22" style="display: none;">    
+              Prince of Persia est un jeu vidéo d'action-aventure développé par Jordan Mechner et publié pour la première fois en 1989. Le jeu suit le personnage du prince qui doit traverser une série de niveaux remplis de pièges mortels et d'ennemis. Le gameplay est basé sur des sauts, des combats à l'épée et des puzzles environnementaux, et le joueur doit terminer chaque niveau dans un temps limité pour sauver la princesse captive.
+            </p>
+            <a href="BanushiArber2201/index.html">
+             <img src="IMG/Prince.jpg" alt="Prince" class="game-image" style="display: none;">
+            </a>
+            </div>
+     </div>
+  </div>
+ <footer id = "footer">
+    <div class = "divTitre2">
+      <h1 class = "titre2">
+        Développé par Arber et Sébastien © [2023]
+      </h1>
+    </div>
+ </footer>
+ <script src="JS/inscription.js"></script>
+ <script src="JS/connection.js"></script>
+ <script src="JS/deconnection.js"></script>
+ <script src="JS/scores.js"></script>
 </body>
 </html>

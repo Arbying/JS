@@ -1,0 +1,116 @@
+#main-body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+#log {
+    margin-right: 10px;
+}
+
+
+
+#main-body::before {
+    content: "";
+    background-image: url('../IMG/principale.jpg');
+    opacity: 0.3;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  
+
+.container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.ranking {
+    margin-top: 50px;
+}
+
+.game-image {
+    width: 5cm;
+    height: 5cm;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.titre {
+    color: whitesmoke;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #333;
+}
+
+.divTitre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid black;
+    background-color: #333;
+}
+
+.titre2 {
+    color: whitesmoke;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #333;
+}
+
+.divTitre2 {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid black;
+    background-color: #333;
+}
+
+
+h2 {
+    font-weight: bolder;
+    color: black;
+}
+
+#img11 {
+    border: 3px solid black;
+    background-color: black;
+    color: lime;
+}
+
+#img22 {
+    border: 3px solid black;
+    background-color: black;
+    color: lime;
+}
+
+
+table {
+    margin-top: -40px;
+    border-collapse: collapse;
+    /*margin-left: -145px;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+th, td {
+    color: lime;
+    border: 1px solid black;
+    padding: 8px;
+    background-color: black;
+}
+
+
